@@ -1,0 +1,301 @@
+body{
+    margin: 0;
+    display: grid;    
+    grid-template-columns: 1fr 5.5fr;
+    /* grid-template-columns: 289px 1151px; */
+    /* width: 1109px; */
+    /* height: 546px; */
+    box-sizing: border-box;
+}
+
+/* ASIDE */
+aside{
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+#img-logo-truck{
+    width: 132px;
+    height: 131px;
+    margin-top: 23px;
+    margin-bottom: 89px;
+}
+#ul-aside-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;   
+    width: 100%; 
+    transform: translateX(-6%);
+    list-style: none;
+    /* height: 781px; */
+}
+.li-aside-menu{
+    /* width: 153px; */
+    width: 100%;
+    height: 61px;
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.li-aside-menu:hover{
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+/* MAIN */
+main{
+    width: 100%;    
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 101px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#img-user-header{
+    width: 49px;
+    height: 59px;
+    margin-left: 20px;
+    margin-right: 32px;
+}
+#img-user-notification{
+    width: 37px;
+    height: 38px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 32px;
+}
+span{
+    float: left;
+    width: 131px;
+    color: #000;
+    text-align: center;
+    font-family: "DM Mono";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+#div-user-name{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    width: 366px;
+    height: 61px;
+    color: #000;
+    text-align: center;
+    font-family: "DM Mono";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* NAV */
+nav{
+    display: flex;
+    justify-content: center;
+}
+nav > ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    width: 233px;
+    height: 128px;
+    border-radius: 12px;
+    background-color: #D9D9D9;
+    overflow-y: auto; 
+}
+.img-icons-cards{
+    width: 85px;
+    height: 90px;
+}
+h3{
+    color: #000;
+    text-align: center;
+    font-family: "DM Mono";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+.status-nav-bar{
+    color: #000;
+    font-family: "DM Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* CONTAINER */
+#div-container-activities{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: aquamarine; */
+}
+#div-container-activities-box{
+    width: 1109px;
+    height: 566px;
+    border-radius: 12px;
+    background-color: #D9D9D9;
+    margin-bottom: 30px;
+}
+#title-div-container-activities-box{
+    display: flex;
+    /* height: 88px; */
+    color: #000;
+    text-align: center;
+    font-family: "DM Mono";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* background-color: cadetblue; */
+}
+#title-div-container-activities-box > img{
+    width: 59px;
+    height: 64px;
+    margin-top: 15px;
+    margin-left: 19px;
+}
+#text-container-activities-box{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* background-color: brown; */
+}
+#ul-container-activities-box{
+    margin: 0;
+}
+#ul-container-activities-box > li{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    font-family: "DM Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 70px;
+    /* background-color: chocolate; */
+}
+.img-ul-activities-box{
+    width: 63px;
+    height: 61px;
+}
+.status-aprovado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 101px;
+    height: 34px;
+    border-radius: 12px;
+    background-color: #0BBB07;
+}
+.status-pendente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 101px;
+    height: 34px;
+    border-radius: 12px;
+    background-color: #BF9E2E;
+}
+.status-analisando{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 101px;
+    height: 34px;
+    border-radius: 12px;
+    background-color: #02598A;
+}
+.status-emAnalise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 101px;
+    height: 34px;
+    border-radius: 12px;
+    background-color: #5ABEF6;
+}
+.status-recusado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 101px;
+    height: 34px;
+    border-radius: 12px;
+    background-color: #F07373;
+}
+#div-select-pages{
+    float: right;
+}
+.span-select-pages1{
+    display: flex;
+    width: 25px;
+    height: 26px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: "DM Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #AAA4A4;
+    margin: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    }
+.span-select-pages2{
+    display: flex;
+    width: 25px;
+    height: 26px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: "DM Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    margin: 0;
+    margin-right: 10px;
+}
