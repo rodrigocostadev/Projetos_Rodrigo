@@ -8,6 +8,9 @@ body{
     /* width: 1440px; */
     /* height: 1024px; */
 }
+main{
+    transform: translateY(-8%);
+}
 #div-container-login{
     margin-top: 185px;
     width: 437px;
@@ -67,6 +70,22 @@ label{
 .icons-input{
     display: block;
 }
+.input-transparent{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+input{
+    background: transparent;
+    color: #000;              /* Cor do texto */
+    padding: 10px;            /* Preenchimento para o campo */
+    font-size: 16px;          /* Tamanho da fonte */
+    outline: none;  
+    width: 80%; 
+}
+.icon-login{
+    margin-top: 10px;
+}
 span{
     width: 201px;
     height: 18px;
@@ -91,4 +110,9 @@ button{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 400ms;
 }
