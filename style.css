@@ -77,9 +77,9 @@ label{
 }
 input{
     background: transparent;
-    color: #000;              /* Cor do texto */
-    padding: 10px;            /* Preenchimento para o campo */
-    font-size: 16px;          /* Tamanho da fonte */
+    color: #000;              
+    padding: 10px;            
+    font-size: 16px;          
     outline: none;  
     width: 80%; 
 }
