@@ -1,4 +1,6 @@
 
+////////////////////////////////////////////////////  MODAIS    ////////////////////////////////////////////////////
+
 const modais = document.querySelectorAll(".modal")
 
 let miniModalMoldes = document.getElementById("modal-button-moldes")
@@ -32,10 +34,16 @@ function closeAllModals(){
     })
 }
 
+function abrirFichaDeSugestao(){
+    console.log("ok")
+}
+
 document.addEventListener("click", function(event){
     if(!event.target.closest(".modal") && !event.target.matches("button") && event.target.id != ("img-user-notification")){
         closeAllModals()
     }
 })
+
+////////////////////////////////////////////////////      ////////////////////////////////////////////////////
 
 

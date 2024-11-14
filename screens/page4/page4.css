@@ -508,6 +508,102 @@ h3{
     background: #D9D9D9;
     margin-bottom: 11px;
 }
+/* MODAL FICHA DE SUGESTÃO */
+#modal-ficha-de-sugestao{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    top: 400px;
+    width: 1145px;
+    height: 463px;
+    border-radius: 12px;
+    background: #D9D9D9;
+    border: solid black 1px;
+    /* background-color: #BDAA15; */
+}
+#aside-modal-ficha-de-sugestao{
+    margin-left: 10px;
+    background-color: grey;
+    border: solid black 1px;
+    /* border-radius: 12px; */
+    width: 320px;
+}
+#aside-div-columns-modal{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background: #D9D9D9;
+    /* background-color: #45A4ED; */
+    height: 100%;
+}
+#title-aside-modal{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 320px;
+    height: 45px;
+    color: #000;
+    text-align: center;
+    font-family: "DM Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #D9D9D9;
+}
+#title-aside-modal > img{
+    width: 37px;
+    height: 33px;
+}
+#ul-aside-modal{
+    list-style: none;
+    color: #000;
+    text-align: center;
+    font-family: "DM Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 80%;
+}
+.li-aside-modal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px;
+    /* background-color: yellow; */
+}
+#modal-column-2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#modal-column-2 > img{
+    width: 337px;
+    height: 342px;
+    margin: auto;
+    margin-top: 40px;
+}
+#modal-column-2 > div{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 337px;
+    /* height: 342px; */
+    margin: auto;
+    /* background-color: #0BBB07; */
+    margin-bottom: 35px;
+}
+#modal-column-3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* FIM MODAL FICHA DE SUGESTÃO */
+
 #ul-container-activities-box{
     margin: 0;
 }
