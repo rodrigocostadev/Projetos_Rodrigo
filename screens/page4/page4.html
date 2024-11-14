@@ -22,34 +22,141 @@
     <main>
         <header>
             <div id="buttons-header">
-                <button id="button-cadastrar-sugestão" >Cadastrar Sugestão</button>
-                <div id="modal-cadastrar-sugestão" >
-                    <div>
-                        <p>Cadastro de Sugestão</p>
-                        <hr>
-                        <div>
-                            <div>coluna1</div>
-                            <div>coluna2</div>
+                <button id="button-cadastrar-sugestão" onclick="openModalSugestao()" >Cadastrar Sugestão</button>
+                <div id="modal-cadastrar-sugestao" class="modal" >
+                        <div id="div-title-modal-cadastrar-sugestao">
+                            <p>Cadastro de Sugestão</p>
+                            <hr>
                         </div>
-                        <div>imagem</div>
-                        <hr>
-                        <div>
-                            <button></button>
-                            <button></button>
+                        <div id="div-collumns-modals">
+                            <div id="modal-collumn-1">
+                                <div>
+                                    <p>OEM</p>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <p>Marca</p>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                        <option value="Volkswagen">Volkswagen</option>
+                                        <option value="Ford">Ford</option>
+                                        <option value="Mercedes">Mercedes</option>
+                                        <option value="Scania">Scania</option>
+                                        <option value="Iveco">Iveco</option>
+                                        <option value="Daf">Daf</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <p>Aplicação</p>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <p>Quem Sugeriu?</p>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <p>Preço Referência</p>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <p>Classificação Preço</p>
+                                    <select name="" id=""></select>
+                                </div>
+                                <div>
+                                    <p>Foto</p>
+                                    <button id="button-procurar-foto" type="submit">Procurar</button>
+                                </div>
+                            </div>
+                            <div id="modal-collumn-2">
+                                <div>
+                                    <p>Descrição</p>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <p>Grupo</p>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                        <option value="Tanque de Expansão">Tanque de Expansão</option>
+                                        <option value="Sistema de Aspiração">Sistema de Aspiração</option>
+                                        <option value="Defletores">Defletores</option>
+                                        <option value="Reservatórios">Reservatórios</option>
+                                        <option value="Tampas">Tampas</option>
+                                        <option value="Sensores">Sensores</option>
+                                        <option value="Diversos">Diversos</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <p>Procura</p>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                        <option value="Alta">Alta</option>
+                                        <option value="Média">Média</option>
+                                        <option value="Baixa">Baixa</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <p>Empresa Solicitante</p>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <p>Observação</p>
+                                    <textarea id="modal-text-area-cadastro-de-sugestao" class="text-area" ></textarea>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <div id="div-img-modal-cadastrar-sugestão">
+                            <img id="img-modal" src="../../assets/page4/Rectangle 92.png" alt="">
+                            <div><hr></div>
+                        </div>                                               
+                        <div class="footer-modal"> 
+                            <button class="voltar" onclick="closeAllModals()" >Voltar</button>
+                            <button class="gravar">Gravar</button>
+                        </div>
                 </div>
                 <div>
                     <button id="button-moldes" onclick="openMiniModal()" >Moldes</button>
-                    <div id="modal-button-moldes" >
-                        <span>1 - Cadastro de Molde</span>
+                    <div id="modal-button-moldes" class="modal" >
+                        <span onclick="openFichaDeMolde()">1 - Cadastro de Molde</span>
                         <span>2 - Geral</span>
+                        <div id="modal-ficha-de-molde" class="modal">
+                            <div id="title-modal-ficha-de-molde">
+                                <p>Ficha de Molde</p>
+                                <hr>
+                            </div>
+                            <div id="div-inputs-ficha-de-molde">
+                                <div  >
+                                    <p>Código</p>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <p>Descrição</p>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <p>Investimento</p>
+                                    <input type="number">
+                                </div>
+                                <div>
+                                    <p>Observação</p>
+                                    <textarea name="text-area-obs" id="modal-text-area-ficha-de-molde" class="text-area"></textarea>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="footer-modal footer-modal-ficha-de-molde">
+                                <button class="voltar" onclick="closeAllModals()" >Voltar</button>
+                                <button class="gravar">Gravar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="header-icons" >
-                <img id="img-user-notification" src="../../assets/page3/Bell (1).png" >  
+                <img id="img-user-notification" onclick="modalNotificationFunction()" src="../../assets/page3/Bell (1).png" >  
                 <img id="img-user-header"  src="../../assets/page3/guilherme 5.png" >
+            </div>
+            <div id="div-notification" class="modal" >
+                <div>08/09/2023 - Sugestão x em análise por Jorge</div>
+                <div>07/09/2023 - Sugestão y aprovada por Carlos</div>
             </div>
         </header>
         <span>Lançamentos</span>

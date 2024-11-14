@@ -21,8 +21,16 @@
     </aside>
     <main>
         <header>
-            <img id="img-user-notification" src="../../assets/page2/bell.png" >  
-            <img id="img-user-header"  src="../../assets/page2/guilherme 4.png" >
+            <div id="div-header">
+                <div id="div-icons-header" >
+                    <img id="img-user-notification" onclick="modalNotificationFunction()" src="../../assets/page2/bell.png" >  
+                    <img id="img-user-header"  src="../../assets/page2/guilherme 4.png" >
+                </div>
+                <div id="div-notification" class="modal" >
+                    <div>08/09/2023 - Sugestão x em análise por Jorge</div>
+                    <div>07/09/2023 - Sugestão y aprovada por Carlos</div>
+                </div>
+            </div>            
         </header>
         <span>Geral</span>
         <div id="div-user-name">            
@@ -108,5 +116,6 @@
             </div>
         </div>
     </main>
+    <script src="page2.js"></script>
 </body>
 </html>

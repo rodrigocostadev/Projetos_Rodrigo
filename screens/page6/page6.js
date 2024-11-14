@@ -9,12 +9,12 @@ let modalNotification = document.getElementById("div-notification")
 function modalNotificationFunction(){
     closeAllModals()
     modalNotification.style.display = "flex";
-    console.log("ok")
 }
 
 function openMiniModal(){
     closeAllModals()
     miniModalMoldes.style.display = "flex";
+    // console.log("okk")
 }
 
 function openModalSugestao(){

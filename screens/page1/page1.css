@@ -30,6 +30,54 @@ header > p {
     font-weight: 400;
     line-height: normal;
 }
+#div-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    /* background-color: green; */
+}
+#div-icons-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#img-user-notification{
+    width: 37px;
+    height: 38px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 32px;
+}
+#div-notification{
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    /* display: flex; */
+    flex-direction: column;   
+    margin-top: 5px; 
+    width: 274px;
+    height: 80px;
+    border-radius: 12px;
+    background: rgba(217, 217, 217, 0.70);
+}
+#div-notification > div{
+    display: flex;
+    width: 270px;
+    height: 28px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: "DM Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 8px;
+}
 h1{
     margin: auto;
     margin-top: 25px;
